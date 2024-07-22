@@ -7,7 +7,7 @@ namespace HSampleProject
         static void Main(string[] args)
         {
             // 
-            var kadai = new Kadai001();
+            var kadai = new src.Kadai001();
             kadai.Begin();
         }
     }

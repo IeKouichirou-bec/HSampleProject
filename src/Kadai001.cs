@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HSampleProject
+namespace HSampleProject.src
 {
     internal class Kadai001
     {
@@ -35,7 +35,8 @@ namespace HSampleProject
                 }
 
 
-                if (isUruu(parseValue)) {
+                if (isUruu(parseValue))
+                {
                     Console.WriteLine(string.Format("{0}年はうるう年です。\r\n", userInput));
                 }
                 else
@@ -65,8 +66,9 @@ namespace HSampleProject
 
         }
 
-        private bool isUruu(int year) {
-            return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+        private bool isUruu(int year)
+        {
+            return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
             //if (year % 4 == 0)
             //{
             //    if (year % 100 == 0)
